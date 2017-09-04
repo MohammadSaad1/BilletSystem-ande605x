@@ -31,5 +31,16 @@ namespace BilletLibTest
         }
 
 
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void TestNummerpladeOver7()
+        {
+            //Arrange
+            var bil = new Bil("NX67218x",DateTime.Now);
+            
+        }
+
+
     }
 }

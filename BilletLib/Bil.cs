@@ -6,7 +6,13 @@ namespace BilletLib
 {
     public class Bil:Køretøj
     {
-       
+        public Bil(string nummerplade, DateTime dato) : base(nummerplade, dato)
+        {
+        }
+
+        public Bil():base()
+        { }
+
 
         public override int Pris()
         {

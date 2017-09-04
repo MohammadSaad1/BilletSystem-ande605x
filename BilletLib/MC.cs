@@ -6,7 +6,13 @@ namespace BilletLib
 {
     public class MC:Køretøj
     {
-       
+        public MC(string nummerplade, DateTime dato) : base(nummerplade, dato)
+        {
+        }
+
+        public MC():base()
+        { }
+
         public override int Pris()
         {
             return 120;

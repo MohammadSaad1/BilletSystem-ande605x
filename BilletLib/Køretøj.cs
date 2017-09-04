@@ -9,6 +9,8 @@ namespace BilletLib
         public string Nummerplade { get; set; }
         public DateTime Dato { get; set; }
         public bool Brobizz { get; set; }
+        public int NormalPris { get; set; }
+
 
 
 

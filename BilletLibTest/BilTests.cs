@@ -55,5 +55,32 @@ namespace BilletLibTest
         }
 
 
+
+        [TestMethod]
+
+        public void TestPrisWeekendMedBrobizz()
+        {
+            //Arrange
+            var bil = new Bil("NX67218", new DateTime(2017,9,3), true);
+            //Act
+            int pris = bil.Pris();
+            //Assert
+            Assert.AreEqual(182, pris);
+        }
+
+
+        [TestMethod]
+
+        public void TestPrisWeekendUdenBrobizz()
+        {
+            //Arrange
+            var bil = new Bil("NX67218", new DateTime(2017, 9, 3), false);
+            //Act
+            int pris = bil.Pris();
+            //Assert
+            Assert.AreEqual(192, pris);
+        }
+
+
     }
 }

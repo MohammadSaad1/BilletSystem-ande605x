@@ -21,10 +21,6 @@ namespace BilletLib
 
 
 
-
-
-
-
         public override int Pris()
         {
             int prisMedRabat = NormalPris;
@@ -33,7 +29,7 @@ namespace BilletLib
                 prisMedRabat = prisMedRabat * 80 / 100;
 
             if (Brobizz)
-                prisMedRabat = BrobizzPris(prisMedRabat);
+                prisMedRabat = base.BrobizzPris(prisMedRabat);
 
             return prisMedRabat;
         }

@@ -25,7 +25,7 @@ namespace BilletLibTest
             //Arrange
             var mc = new MC();
             //Act
-            string køretøj = mc.Køretøj();
+            string køretøj = mc.KøretøjType();
             //Assert
             Assert.AreEqual("MC", køretøj);
         }

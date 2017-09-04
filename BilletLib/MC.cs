@@ -4,17 +4,15 @@ using System.Text;
 
 namespace BilletLib
 {
-    public class MC
+    public class MC:Køretøj
     {
-        public string Nummerplade { get; set; }
-        public DateTime Date { get; set; }
-
-        public int Pris()
+       
+        public override int Pris()
         {
             return 120;
         }
 
-        public string Køretøj()
+        public override string KøretøjType()
         {
             return "MC";
         }

@@ -37,8 +37,21 @@ namespace BilletLibTest
         public void TestNummerpladeOver7()
         {
             //Arrange
-            var bil = new Bil("NX67218x",DateTime.Now);
+            var bil = new Bil("NX67218x",DateTime.Now,false);
             
+        }
+
+
+        [TestMethod]
+        
+        public void TestPrisBrobizz()
+        {
+            //Arrange
+            var bil = new Bil("NX67218", DateTime.Now, true);
+            //Act
+            int pris = bil.Pris();
+            //Assert
+            Assert.AreEqual(228, pris);
         }
 
 

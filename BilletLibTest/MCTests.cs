@@ -7,6 +7,8 @@ namespace BilletLibTest
     [TestClass]
     public class MCTests
     {
+
+        //Flot kode Anders det synes jeg 
         [TestMethod]
         public void TestPris120()
         {
